@@ -1,0 +1,7 @@
+var name = ["John", "Jane", "Paul", [1,2,3]];
+console.log(name[1]);
+console.log(name[3][1]);
+name.shift();
+name.pop();
+name.push("e");
+console.log(name);

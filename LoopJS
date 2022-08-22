@@ -1,0 +1,15 @@
+var letters = ['a', 'b', 'c', 'd', 'e'];
+console.log(letters.length);
+console.log([].length);
+
+//traversing through entire array
+for (var i=0; i<letters.length; i++) {
+    console.log(i, letters[i]);
+};
+
+//finding an element in array
+for (var i=0; i<letters.length; i++) {
+    if (letters[i]=='c'){
+    console.log(i, letters[i]);
+    }
+};

@@ -1,0 +1,10 @@
+var person = {
+    "name": "John",
+    "email": "john@example.com",
+    "age": 30
+};
+
+console.log(person);
+console.log(person.email);
+//trying to access the element in array fashion
+console.log(person[0]);

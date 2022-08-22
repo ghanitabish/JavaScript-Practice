@@ -1,0 +1,9 @@
+var getRandomEmail = function(Domain){
+    var emailDomain = Domain;
+    var randomString = Math.random().toString(36).substring(7);;
+    var randomEmail = randomString + "\@" + emailDomain;
+    return randomEmail;
+};
+
+var domain = 'TestCode.Com';
+console.log(getRandomEmail(domain));

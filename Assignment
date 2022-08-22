@@ -1,0 +1,36 @@
+const sampleData = [
+    {
+        "name": "John Doe",
+        "yearOfEmployment": 1995,
+        "isActive": false
+    },
+    {
+        "name": "Marissa Williams",
+        "yearOfEmployment": 2007,
+        "isActive": true
+    },
+    {
+        "name": "Isabelle Keanna",
+        "yearOfEmployment": 2000,
+        "isActive": true
+    },
+    {
+        "name": "Mark McRolland",
+        "yearOfEmployment": 2018,
+        "isActive": true
+    }    
+];
+
+function findLoyalEmployees(employees, currentYear) {
+    let loyal = [];
+    for(let i=0; i<sampleData.length; i++) {
+        if(currentYear-sampleData[i].yearOfEmployment>=10 && sampleData[i].isActive===true) {
+            loyal.push(sampleData[i]);
+        }
+    }
+    console.log(loyal);
+	return loyal;
+}  
+
+const year = (new Date()).getFullYear(); // get the current year
+const listOfloyalEmployees = findLoyalEmployees(sampleData, year);

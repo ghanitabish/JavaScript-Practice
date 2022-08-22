@@ -1,0 +1,24 @@
+//let is the replacement of var
+let letters = ['a', 'b', 'c', 'd'];
+
+let forEachLetters = function displayLetters(letters) {
+    console.log(letters);
+}
+letters.forEach(forEachLetters);
+
+const person = {};
+person.name = "John";
+console.log(person.name);
+
+//string with backticks
+const message = `hello! my name is ${person.name}`;
+console.log(message);
+
+//Another way to declare function
+const aPlusB = (a, b) => a + b;
+console.log(aPlusB(1, 2));
+
+//const assignement value can't be changed so error will be thrown
+const c = 2;
+c = 3;
+console.log(c);

@@ -1,0 +1,9 @@
+var createTask = function() {
+    console.log("Task creation completed");
+}
+
+var numberOfTask = 5;
+while(numberOfTask>0){
+    createTask();
+    numberOfTask--;
+}

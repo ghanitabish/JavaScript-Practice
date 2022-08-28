@@ -1,4 +1,4 @@
-const sampleData = [
+const employees = [
     {
         "name": "John Doe",
         "yearOfEmployment": 1995,
@@ -23,9 +23,16 @@ const sampleData = [
 
 function findLoyalEmployees(employees, currentYear) {
     let loyal = [];
-    for(let i=0; i<sampleData.length; i++) {
-        if(currentYear-sampleData[i].yearOfEmployment>=10 && sampleData[i].isActive===true) {
-            loyal.push(sampleData[i]);
+
+    if(employees.length===0){
+        return loyal;
+    }
+    
+    else {
+        for(let i=0; i<employees.length; i++) {
+            if(currentYear-employees[i].yearOfEmployment>=10 && employees[i].isActive===true) {
+                loyal.push(employees[i]);
+            }
         }
     }
     console.log(loyal);
